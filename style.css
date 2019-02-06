@@ -1,0 +1,94 @@
+html,body {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  height: 100%;
+}
+
+@-webkit-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+@-moz-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+@keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+.container {
+  text-align: center;
+  padding: 1em 3em;
+}
+
+/*
+--- CONTENT TOP ---
+*/
+h1 {
+  font-size: 46px;
+  color: #ffe500;
+}
+blockquote {
+  font-family: 'Kalam', cursive;
+  font-style: italic;
+  font-size: 32px;
+  color: #fff;
+}
+
+/* 
+ ---CONTENT BOTTOM ---
+*/
+.content-bottom {
+  padding-top: 3em;
+}
+input {
+  background: transparent;
+  border: 1px solid #000;
+  font-size: 24px;
+  padding: 0.5em;
+  max-width: 50%;
+  width: 100%;
+}
+input::placeholder {color: #000;}
+
+/* 
+ --- BUTTONS --- 
+*/
+.btn {
+  cursor: pointer;
+  opacity: 1;
+  transition: .2s;
+  text-transform: uppercase;
+  font-family: 'VT323', monospace;
+}
+.btn:hover {opacity: .7;}
+.btn-showQuote {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 36px;
+  padding: 0.3em 1em;
+}
+
+.btn-addQuote {
+  font-size: 24px;
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  padding: 0.5em 1em;
+  margin-left: 1em;
+}
